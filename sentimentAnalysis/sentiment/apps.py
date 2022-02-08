@@ -11,5 +11,6 @@ class SentimentConfig(AppConfig):
     path = os.path.join(settings.MODELS, 'sentiment_models.p')
     with open(path, 'rb') as pickled:
         data = pickle.load(pickled)
+
     model = data["model"]
     vectorizer = data["vectorizer"]
