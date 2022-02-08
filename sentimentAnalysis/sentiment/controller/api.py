@@ -3,9 +3,9 @@ from ninja import NinjaAPI
 from django.http import HttpRequest
 from django.http import JsonResponse
 
-from .models import Post
+from sentiment.model.models import Post
 from .apps import SentimentConfig
-from .schemas import SentimentOneSchema
+from sentiment.model.schemas import SentimentOneSchema
 
 from rest_framework.views import APIView
 from pydantic import BaseModel

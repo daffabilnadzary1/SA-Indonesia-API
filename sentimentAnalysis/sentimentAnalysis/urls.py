@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from ninja import NinjaAPI
 from sentiment import views
-from sentiment.api import api
+from sentiment.controller.api import api
 
 urlpatterns = [
     path('admin/', admin.site.urls),

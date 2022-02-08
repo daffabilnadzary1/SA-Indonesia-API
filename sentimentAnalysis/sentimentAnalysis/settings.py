@@ -16,7 +16,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-MODELS = os.path.join(BASE_DIR, 'sentiment/models')
+MODELS = os.path.join(BASE_DIR, 'sentiment/sentimentModel')
 # Application definition
 
 INSTALLED_APPS = [
