@@ -5,7 +5,6 @@ from .api import predicting
 
 st.title("My first app created in streamlit")
 
-
 with st.form("my_form"):
     # st.write("Inside the form")
     # slider_val = st.slider("Form slider")
