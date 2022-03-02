@@ -8,7 +8,7 @@ class SentimentConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'sentiment'
 
-    path = os.path.join(settings.MODELS, 'sentiment_models.p')
+    path = os.path.join(settings.MODELS, 'svm_models.p')
     with open(path, 'rb') as pickled:
         data = pickle.load(pickled)
 

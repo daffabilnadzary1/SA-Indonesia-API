@@ -39,14 +39,10 @@ def predicting(text):
             })
         return results
 
-@api.post('/sentimentone')
+@api.post('sentimentone')
 def predict_sentiment(request:HttpRequest, query_string: QueryString):
 
     sentiment = predicting(query_string.query)
-    # response = {
-    #     "text": query_string.query,
-    #     "sentiment":sentiment,
-    # }
     return {
         "query": query_string.query,
         "sentiment": sentiment,
