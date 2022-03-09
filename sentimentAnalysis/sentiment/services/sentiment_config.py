@@ -3,7 +3,6 @@ from django.conf import settings
 import os
 import pickle
 
-
 class SentimentConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'sentiment'

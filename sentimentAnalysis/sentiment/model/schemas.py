@@ -1,6 +1,13 @@
 from ninja import Schema
+from pydantic import BaseModel
 
+class QueryString(Schema):
+    query: str = ''
 
-class SentimentOneSchema(Schema):
-    text: str
-    sentiment: str
+class QueryList(Schema):
+    query: list = None
+
+class ResponseMessage(Schema):
+    status: int
+    message: str
+    payload: dict = {}

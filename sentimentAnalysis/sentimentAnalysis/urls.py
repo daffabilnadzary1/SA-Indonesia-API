@@ -1,11 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from ninja import NinjaAPI
-from sentiment import views
-from sentiment.controller.api import api
+from sentiment.controller.predicting_controller import sentiment_api
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    #path("classifyOne/", views.call_model.as_view())
-    path('predict/', api.urls)
+    path('predict/', sentiment_api.urls)
 ]
