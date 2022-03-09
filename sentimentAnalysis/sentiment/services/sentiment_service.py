@@ -20,8 +20,10 @@ class SentimentPrediction():
                 vector = SentimentConfig.vectorizer.transform([x])
                 prediction = SentimentConfig.model.predict(vector)
 
-                results.append({
-                    "text": x,
-                    "text_sentiment": prediction[0],
-                })
+                results.append(
+                    {
+                        "text": x,
+                        "text_sentiment": prediction[0],
+                    }
+                )
             return results

@@ -1,5 +1,4 @@
 from ninja import Schema
-from pydantic import BaseModel
 
 class QueryString(Schema):
     query: str = ''

@@ -4,9 +4,6 @@ from django.http import JsonResponse
 from sentiment.model.schemas import QueryString, QueryList, ResponseMessage
 from sentiment.services.sentiment_service import SentimentPrediction
 
-from rest_framework.views import APIView
-from pydantic import BaseModel
-
 sentiment_api = NinjaAPI(
     title = 'Indonesian Sentiment Analysis API',
     description = 'API for predicting the sentiment of Indonesian sentence'
