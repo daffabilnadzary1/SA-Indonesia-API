@@ -6,7 +6,7 @@ This project is created to predict the sentiment of a sentence or list of senten
 ### JSON Structure:
 ```
 {
-  "text": (query),
+	"text": (query),
 	"text_sentiment": (sentiment of the text/query)
 }
 ```
